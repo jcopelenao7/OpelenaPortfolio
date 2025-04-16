@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <style>
         .roboto-font {
             font-family: 'Roboto', sans-serif;
@@ -46,6 +47,18 @@
             box-shadow: 0 0 10px 5px #a8b7ff;
             border-radius: 50%; /* Ensure it stays circular */
         }
+        .btn-primary.roboto-font {
+            font-family: 'Roboto', sans-serif;
+            background-color: #007bff; /* Initial background color */
+            border-color: #007bff; /* Initial border color */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Add shadow */
+        }
+
+        .btn-primary.roboto-font:hover {
+            background-color: #799dc3; /* Hover background color */
+            border-color: #799dc3; /* Hover border color */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add a slightly larger shadow on hover */
+        }
     </style>
 </head>
 <body style="background: linear-gradient(to right, #f0f9ff, #f8fafc, #fdf4ff);">
@@ -79,20 +92,20 @@
             <div class="card-header">
                 <ul class="nav nav-tabs card-header-tabs justify-content-center">
                     <li class="nav-item">
-                        <a class="nav-link active" data-bs-toggle="tab" href="#background">Background</a>
+                        <button class="nav-link active" id="background-tab" data-bs-toggle="tab" data-bs-target="#background" type="button" role="tab" aria-controls="background" aria-selected="true">Background</button>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" data-bs-toggle="tab" href="#projects">Projects</a>
+                        <button class="nav-link" id="projects-tab" data-bs-toggle="tab" data-bs-target="#projects" type="button" role="tab" aria-controls="projects" aria-selected="false">Projects</button>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" data-bs-toggle="tab" href="#skills">Skills</a>
+                        <button class="nav-link" id="skills-tab" data-bs-toggle="tab" data-bs-target="#skills" type="button" role="tab" aria-controls="skills" aria-selected="false">Skills</button>
                     </li>
                 </ul>
             </div>
             <div class="card-body">
                 <div class="tab-content">
                     <div class="tab-pane fade show active" id="background">
-                        <p class="card-text roboto-font" style="text-align: justify;">Navigating my studies as a BS Information Technology student here in the Philippines, I also dedicate significant time and energy to music production. For me, the ultimate goal is to create art that resonates on its own merit, allowing the music to convey its message directly. This creative pursuit is complemented by my current exploration into the world of programming, a journey I'm undertaking with enthusiasm and a desire to expand my technical skills.</p>
+                        <p class="card-text roboto-font text-justify">Navigating my studies as a BS Information Technology student here in the Philippines, I also dedicate significant time and energy to music production. For me, the ultimate goal is to create art that resonates on its own merit, allowing the music to convey its message directly. This creative pursuit is complemented by my current exploration into the world of programming, a journey I'm undertaking with enthusiasm and a desire to expand my technical skills.</p>
                         <hr>
                         <div style="border: 1px solid #ced4da; padding: 10px; border-radius: 5px;">
                             <h5 class="roboto-font">Education</h5>
@@ -109,10 +122,29 @@
                         </div>
                     </div>
                     <div class="tab-pane fade" id="projects">
-                        <p class="card-text">Projects information here.</p>
+                        <h5 class="roboto-font">Coding Related</h5>
+                        <hr>
+                        <div style="border: 1px solid #ced4da; padding: 10px; border-radius: 5px;">
+                            <h6 class="roboto-font">Portfolio Profile</h6>
+                            <p class="roboto-font">A project simple done by creating a portfolio provide or CV using a CSS framework and HTML then later publishing it through github to turn it into a published website.</p>
+                            <a href="https://jcopelenao7.github.io/OpelenaPortfolio/" class="btn btn-primary roboto-font rounded" target="_blank"><i class="bi bi-github"></i> View</a>
+                        </div>
+                        <hr>
+                        <h5 class="roboto-font">Production Related</h5>
+                        <hr>
+                        <div style="border: 1px solid #ced4da; padding: 10px; border-radius: 5px;">
+                            <h6 class="roboto-font">Music</h6>
+                            <p class="roboto-font">Projects involving music be it with the use of sounds created from scratch, recordings from the world, and even with the use of organic instrumets.</p>
+                            <a href="https://soundcloud.com/kuidom" class="btn btn-primary roboto-font rounded" target="_blank">View</a>
+                        </div>
+                        <div style="border: 1px solid #ced4da; padding: 10px; border-radius: 5px;">
+                            <h6 class="roboto-font">Video</h6>
+                            <p class="roboto-font">Mostly visuallizers made from premier pro and premier after effects for the music projects.</p>
+                            <a href="https://www.youtube.com/channel/UCe45f9luw4Cq5QlfcWlD3Xw" class="btn btn-primary roboto-font rounded" target="_blank"><i class="bi bi-youtube"></i> View</a>
+                        </div>
                     </div>
                     <div class="tab-pane fade" id="skills">
-                        <p class="card-text">Skills information here.</p>
+                        <p class="card-text">Information here</p>
                     </div>
                 </div>
             </div>
