@@ -45,19 +45,37 @@
             border: 4px solid #050068;
             padding: 0;
             box-shadow: 0 0 10px 5px #a8b7ff;
-            border-radius: 50%; /* Ensure it stays circular */
+            border-radius: 50%;
         }
         .btn-primary.roboto-font {
             font-family: 'Roboto', sans-serif;
-            background-color: #007bff; /* Initial background color */
-            border-color: #007bff; /* Initial border color */
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Add shadow */
+            background-color: #007bff; 
+            border-color: #007bff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
         }
 
         .btn-primary.roboto-font:hover {
-            background-color: #799dc3; /* Hover background color */
-            border-color: #799dc3; /* Hover border color */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add a slightly larger shadow on hover */
+            background-color: #799dc3; 
+            border-color: #799dc3;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+        }
+        .skill-rectangle {
+            display: inline-block;
+            padding: 0.3rem 0.7rem;
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: #495057;
+            background-color: #e9ecef;
+            margin-right: 0.3rem;
+            border: 1px solid #ced4da;
+            transition: background-color 0.3s, color 0.3s;
+            border-radius: 0.25rem; 
+        }
+
+        .skill-rectangle:hover {
+            background-color: #dee2e6;
+            color: #212529;
+            border-color: #adb5bd;
         }
     </style>
 </head>
@@ -135,7 +153,10 @@
                         <div style="border: 1px solid #ced4da; padding: 10px; border-radius: 5px;">
                             <h6 class="roboto-font">Music</h6>
                             <p class="roboto-font">Projects involving music be it with the use of sounds created from scratch, recordings from the world, and even with the use of organic instrumets.</p>
-                            <a href="https://soundcloud.com/kuidom" class="btn btn-primary roboto-font rounded" target="_blank">View</a>
+                            <a href="https://soundcloud.com/kuidom" class="btn btn-primary roboto-font rounded" target="_blank">
+                                <img src="./sclogo.jpg" alt="SoundCloud" style="width: 1em; height: 1em; vertical-align: middle; filter: invert(100%); border-radius: 50%;">
+                                View
+                            </a>
                         </div>
                         <div style="border: 1px solid #ced4da; padding: 10px; border-radius: 5px;">
                             <h6 class="roboto-font">Video</h6>
@@ -144,7 +165,36 @@
                         </div>
                     </div>
                     <div class="tab-pane fade" id="skills">
-                        <p class="card-text">Information here</p>
+                        <h5 class="roboto-font">Coding</h5>
+                        <hr>
+                        <div>
+                            <span class="skill-rectangle"><i class="bi bi-file-code"></i> HTML/CSS</span>
+                            <span class="skill-rectangle"><i class="bi bi-github"></i> GitHub</span>
+                            <span class="skill-rectangle"><i class="bi bi-code"></i> JavaScript</span>
+                            <span class="skill-rectangle"><i class="bi bi-bootstrap"></i> Bootstrap</span>
+                            <span class="skill-rectangle"><i class="bi bi-layout-split"></i> Tailwind</span>
+                        </div>
+                        <div style="margin-top: 0.5rem;">
+                            <span class="skill-rectangle">
+                                <img src="./Python-logo-notext.svg.png" alt="Python" style="width: 1em; height: 1em; vertical-align: middle;">
+                                Python
+                            </span>
+                        </div>
+                        <hr style="border-top: 5px solid black; margin-left: -16px; margin-right: -16px;">
+                        <h5 class="roboto-font">Music</h5>
+                        <hr style="margin-left: -10px; margin-right: -10px;">
+                        <div>
+                            <span class="skill-rectangle">
+                                <img src="./flstudiologo.png" alt="FL Studio" style="width: 1em; height: 1em; vertical-align: middle;">
+                                FL Studio
+                            </span>
+                        </div>
+                        <hr style="border-top: 5px solid rgb(0, 0, 0); margin-left: -16px; margin-right: -16px;">
+                        <h5 class="roboto-font">Video</h5>
+                        <div>
+                            <span class="skill-rectangle"><i class="bi bi-camera-video"></i> Adobe Premiere Pro</span>
+                            <span class="skill-rectangle"><i class="bi bi-camera-video"></i> Adobe After Effects</span>
+                        </div>
                     </div>
                 </div>
             </div>
